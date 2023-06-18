@@ -1,0 +1,850 @@
+<html dir="rtl" lang="fa" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>صفحه اصلی</title>
+</head>
+
+<body class="select-none scroll-smooth">
+
+    <header class="sticky top-0 z-50 shadow-xl">
+        <div class="flex items-center justify-start bg-[#212330] px-4 py-1">
+            <ul class="flex items-center justify-center lg:justify-start gap-5 flex-wrap">
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">ارزها</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">کیف پول</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">امنیت</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">واسط</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">مرکز پشتیبانی</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">ارتباط با ما</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex items-center justify-between bg-[#2a2b3d] h-20 px-7">
+            <svg id="hamIcon" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="flex lg:hidden cursor-pointer text-white bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            <ul id="mobileMenu" class="z-50 transition-all duration-300 lg:flex items-center gap-8 text-white text-sm fixed lg:static inset-y-0 bg-[#191919] w-60 lg:w-auto lg:bg-transparent block">
+
+                <li class="signUpBg font-bold hidden lg:flex bg-no-repeat border-t border-[#202020] lg:border-t-0 pr-36 lg:pr-6 lg:w-32 h-11 text-black transition-all duration-400 hover:text-white justify-center items-center cursor-pointer mb-1">
+                    <a>
+                        ثبت نام
+                    </a>
+                </li>
+                <li class="loginBg font-bold hidden lg:flex bg-no-repeat border-t border-[#202020] lg:border-t-0 pr-36 lg:pr-0 lg:w-[106px] h-8 text-black transition-all duration-400 hover:text-white justify-center items-center cursor-pointer mb-1">
+                    <a>
+                        ورود
+                    </a>
+                </li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-x-lg lg:hidden py-3 text-[#686667] hover:text-white cursor-pointer transition-all duration-200 ml-auto" id="close" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+                <li class="lg:text-[#00e1f6] p-4 border-t border-[#202020] pb-2 lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:border-b lg:border-[#00e1f6] hover:text-white text-white">
+                    <a href="index.html">
+                        خانه
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t border-[#202020] pb-2 lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#features">
+                        ویژگی ها
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t pb-2 border-[#202020] lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#preview">
+                        پیش نمایش
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t pb-2 border-[#202020] lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#programs">
+                        برنامه ها
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t pb-2 border-[#202020] lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#team">
+                        تیم
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] border-t p-4 lg:p-0 border-[#202020] lg:border-t-0 pb-2 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#blog">
+                        بلاگ
+                    </a>
+                </li>
+                <li class="signUpBg font-bold lg:hidden bg-no-repeat border-t border-[#202020] lg:border-t-0 pr-36 lg:pr-6 lg:w-32 h-11 text-black transition-all duration-400 hover:text-white flex justify-center items-center cursor-pointer mb-1">
+                    <a>
+                        ثبت نام
+                    </a>
+                </li>
+                <li class="loginBg font-bold lg:hidden bg-no-repeat border-t border-[#202020] lg:border-t-0 pr-36 lg:pr-0 lg:w-[106px] h-8 text-black transition-all duration-400 hover:text-white flex justify-center items-center cursor-pointer mb-1">
+                    <a>
+                        ورود
+                    </a>
+                </li>
+            </ul>
+
+            <a class="cursor-pointer">
+                <img src="img/logo-top.png" alt="">
+            </a>
+        </div>
+    </header>
+
+    <section id="header" class="section1 -z-20 text-center bg-center pt-11 px-4 pb-60 lg:pb-32 bg-no-repeat bg-cover relative">
+        <div class="bannerBg absolute inset-0 h-full w-full bg-[#141844] opacity-0"></div>
+        <h1 class="font-bold lg:text-3xl text-xl text-white">
+            مداد رنگی ها مشغول بودند به جز مداد سفید، هیچکس به او کار نمیداد،
+            <br> & به یاد هم باشیم شاید فردا ما هم در کنار هم نباشیم
+        </h1>
+        <div class="flex items-center justify-center font-bold text-xl mt-1">
+            <p class="text-[#00e1f6]">یک تعامل</p>
+            <p class="text-[#01aeef]">- تمام ویژگی رزها</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-1 relative lg:mt-4 mt-8 w-full text-white">
+            <img src="img/Capture.PNG" alt="" class="lg:block mx-auto w-11/12 hidden">
+            <div class="relative">
+                <!-- <img src="img/screen-balance.png" alt="" class="mt-11 lg:ml-32 mx-auto lg:block hidden"> -->
+                <img src="img/chart-removebg-preview.png" alt="" class="block lg:hidden mx-auto">
+                <p class="text-center font-bold xl:text-lg text-sm -mt-2 lg:hidden">به‌روزرسانی خودکار موجودی پرتفوی خود را دریافت کنید.</p>
+            </div>
+            <div class="z-10 relative">
+                <!-- <img src="img/screen-trading.png" alt="" class="mx-auto lg:block hidden"> -->
+                <img src="img/Capture-removebg-preview.png" alt="" class="block lg:hidden mx-auto">
+                <p class="text-center font-bold xl:text-lg text-sm -mt-2 lg:hidden">تجارت در مبادلات متعدد از یک رابط امن واحد. </p>
+            </div>
+            <div class="relative">
+                <!-- <img src="img/screen-stats.png" alt="" class="mt-11 lg:-ml-20 mx-auto lg:block hidden"> -->
+                <img src="img/Capture-removebg-preview2.png" alt="" class="block lg:hidden mx-auto">
+                <p class="font-bold xl:text-lg text-sm -mt-2 lg:hidden">به‌روزرسانی خودکار موجودی پرتفوی خود را دریافت کنید.</p>
+            </div>
+
+            <!-- <img src="img/Tooltips.png" alt="" class="absolute hidden xl:block inset-x-0 z-20 -top-4 w-11/12 mx-auto"> -->
+            <!-- <img src="img/tooltips-tablet.png" alt="" class="absolute hidden lg:block xl:hidden inset-x-0 z-20 -top-4 w-7/12 mx-auto"> -->
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 bg-[#14141c] absolute bottom-0 inset-x-0 w-full py-9 px-6 mt-6 border-[#008bf6] border-b-2">
+            <img src="img/supported_exchanges_1.png" alt="">
+            <img src="img/supported_exchanges_2.png" alt="">
+            <img src="img/supported_exchanges_3.png" alt="">
+        </div>
+    </section>
+
+    <section id="section2" class="section2 xl:h-[410px] bg-[#2a2b3d] relative px-4">
+        <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-80 py-2 absolute -top-5 text-sm inset-x-0 mx-auto after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+            مشاهده همه صرافی های پشتیبانی شده
+        </a>
+        <div class="xl:container mx-auto bg-cover bg-no-repeat bg-center h-full py-32">
+            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-8 gap-7 justify-between text-center text-white">
+                <div class="xl:block hidden"></div>
+                <div>
+                    <img src="img/ico-security.png" alt="" class="block mx-auto">
+                    <p class="text-base my-5 h-20 font-bold border-b border-[#0095eb] pb-3">استانداردهای امنیتی پیشرفته</p>
+                    <p class="text-xs text-gray-300">
+                        CryptoView تمام اقدامات لازم را برای ایمن کردن کلیدهای API و داده های کاربران با استفاده از استانداردهای امنیتی درجه سازمانی انجام داده است.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/ico-funds.png" alt="" class="block mx-auto">
+                    <p class="text-base my-5 h-20 font-bold border-b border-[#0095eb] pb-3">ما هرگز وجوه شما را ذخیره نمی کنیم</p>
+                    <p class="text-xs text-gray-300">
+                        پلت فرم ما وجوه مشتریان را ذخیره نمی کند و خدمات کیف پول ارائه نمی کند. وجوه شما همیشه در کیف پول صرافی شما محفوظ می ماند.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/ico-fees.png" alt="" class="block mx-auto">
+                    <p class="text-base my-5 h-20 font-bold border-b border-[#0095eb] pb-3">بدون کارمزد معاملاتی اضافی</p>
+                    <p class="text-xs text-gray-300">
+                        CryptoView هیچ کارمزد معاملاتی اضافی دریافت نمی کند. برای اطلاعات بیشتر در مورد مدل اشتراک ما، لطفاً بخش قیمت گذاری ما را بررسی کنید.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/ico-trading-volume.png" alt="" class="block mx-auto">
+                    <p class="text-base my-5 h-20 font-bold border-b border-[#0095eb] pb-3">بدون محدودیت حجم معاملات</p>
+                    <p class="text-xs text-gray-300">
+                        هیچ محدودیتی برای حجم معاملات یا معاملات وجود ندارد. شما آزاد هستید که حتی در طول دوره آزمایشی رایگان، به اندازه نیاز خود معامله کنید.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/ico-privacy.png" alt="" class="block mx-auto">
+                    <p class="text-base my-5 h-20 font-bold border-b border-[#0095eb] pb-3">ما به حریم خصوصی شما احترام می گذاریم</p>
+                    <p class="text-xs text-gray-300">
+                        CryptoView داده های شخصی کاربر را با اشخاص ثالث یا داده های مرتبط با فعالیت تجاری یا وجوه کاربر به اشتراک نمی گذارد.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/ico-verify.png" alt="" class="block mx-auto">
+                    <p class="text-base my-5 h-20 font-bold border-b border-[#0095eb] pb-3">بدون هیچ روش تأیید</p>
+                    <p class="text-xs text-gray-300">
+                        در حالی که ما به هیچ فرآیند تأیید حساب نیاز نداریم، کاربران می توانند به صورت اختیاری نمایه حساب خود را پر کنند. CrypoView به طور کامل با GDPR مطابقت دارد.
+                    </p>
+                </div>
+                <div class="xl:block hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features bg-[#2a2b3d] md:py-28 px-4 lg:px-0 pt-60">
+        <div class=" mx-auto bg-cover bg-no-repeat bg-center mt-36 px-7">
+            <h1 class="text-white text-center text-4xl font-bold">ویژگی ها</h1>
+            <p class="text-center text-[#00e1f6] text-lg font-bold my-3">ویژگی های اصلی و ابزارهای معاملاتی یکپارچه</p>
+            <p class="text-center text-gray-500 lg:w-1/3 w-full mx-auto mb-8">
+                رابط پیشرفته ما یک راه حل همه کاره برای معامله گران ارزهای رمزنگاری شده، مدیران حرفه ای صندوق و همه افراد در این بین ارائه می دهد.
+            </p>
+
+            <div class="container mx-auto border-t border-[#00e1f6] xl:border-0">
+                <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                    <img src="img/feature06.png" alt="" class="mx-auto lg:-mt-10 -ml-56 hidden xl:block">
+                    <div>
+                        <p class="text-[#01a6f1] text-2xl">معاملات چند بورسی</p>
+                        <p class="text-gray-400 text-base xl:w-1/2 w-full mt-7">
+                            در حین معامله در چندین صرافی از یک حساب امن واحد، داده های مبادلات و کیف پول خود را همگام سازی کنید. تاریخچه معاملات و موجودی پرتفولیو به طور خودکار وارد و به روز می شوند و به شما امکان می دهد معاملات قبلی را بررسی کرده و موجودی را در تمام صرافی های متصل
+                            دنبال کنید.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/feature01small.png" alt="" class="mt-4 xl:ml-[-240px] mx-auto xl:-mt-7  block xl:hidden">
+            </div>
+            <div class="container border-t border-[#00e1f6] xl:border-0 mx-auto">
+                <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                    <div class="mr-auto xl:w-1/2 w-full">
+                        <p class="text-[#01a6f1] text-2xl">ردیابی نمونه کارها</p>
+                        <p class="text-gray-400 text-base mt-12">
+                            موجودی پورتفولیوی شما داده های موجودی را از تمام صرافی ها و کیف پول های متصل جمع آوری می کند. ما همچنین از حساب‌های فرعی مانند: Margin، Lending، Swap و غیره پشتیبانی می‌کنیم. علاوه بر این، می‌توانید ورودی‌های موجودی دستی را برای نمایش کیف پول‌های آفلاین
+                            یا ذخیره‌سازی سرد اضافه و مدیریت کنید.
+                        </p>
+                    </div>
+                    <img src="img/feature-balance.png" alt="" class="mt-2 hidden xl:block -mr-56">
+                    <img src="img/feature02small.png" alt="" class="mt-6 mx-auto xl:-mt-7 block xl:hidden">
+                </div>
+            </div>
+            <div class="container border-t border-[#00e1f6] xl:border-0 mx-auto">
+                <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                    <img src="img/feature04.png" alt="" class="mx-auto lg:-mt-10 -ml-56 hidden xl:block">
+                    <div>
+                        <p class="text-[#01a6f1] text-2xl">معاملات چند بورسی</p>
+                        <p class="text-gray-400 text-base xl:w-1/2 w-full mt-7">
+                            در حین معامله در چندین صرافی از یک حساب امن واحد، داده های مبادلات و کیف پول خود را همگام سازی کنید. تاریخچه معاملات و موجودی پرتفولیو به طور خودکار وارد و به روز می شوند و به شما امکان می دهد معاملات قبلی را بررسی کرده و موجودی را در تمام صرافی های متصل
+                            دنبال کنید.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/feature03small.png" alt="" class="mt-4 xl:ml-[-240px] mx-auto xl:-mt-7  block xl:hidden">
+            </div>
+            <div class="container border-t border-[#00e1f6] xl:border-0 mx-auto">
+                <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                    <div class="mr-auto xl:w-1/2 w-full mt-9">
+                        <p class="text-[#01a6f1] text-2xl">ردیابی نمونه کارها</p>
+                        <p class="text-gray-400 text-base mt-12">
+                            موجودی پورتفولیوی شما داده های موجودی را از تمام صرافی ها و کیف پول های متصل جمع آوری می کند. ما همچنین از حساب‌های فرعی مانند: Margin، Lending، Swap و غیره پشتیبانی می‌کنیم. علاوه بر این، می‌توانید ورودی‌های موجودی دستی را برای نمایش کیف پول‌های آفلاین
+                            یا ذخیره‌سازی سرد اضافه و مدیریت کنید.
+                        </p>
+                    </div>
+                    <img src="img/feature03.png" alt="" class="mt-2 hidden xl:block -mr-56">
+                    <img src="img/feature04small.png" alt="" class="mt-6 mx-auto xl:-mt-7 block xl:hidden">
+                </div>
+            </div>
+            <div class="container border-t border-[#00e1f6] xl:border-0 mx-auto">
+                <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                    <img src="img/feature02.png" alt="" class="mx-auto lg:-mt-10 -ml-56 hidden xl:block">
+                    <div>
+                        <p class="text-[#01a6f1] text-2xl">معاملات چند بورسی</p>
+                        <p class="text-gray-400 text-base xl:w-1/2 w-full mt-7">
+                            در حین معامله در چندین صرافی از یک حساب امن واحد، داده های مبادلات و کیف پول خود را همگام سازی کنید. تاریخچه معاملات و موجودی پرتفولیو به طور خودکار وارد و به روز می شوند و به شما امکان می دهد معاملات قبلی را بررسی کرده و موجودی را در تمام صرافی های متصل
+                            دنبال کنید.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/feature5small.png" alt="" class="mt-4 xl:ml-[-240px] mx-auto xl:-mt-7  block xl:hidden">
+            </div>
+            <div class="container border-t border-[#00e1f6] xl:border-0 mx-auto">
+                <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                    <div class="mr-auto xl:w-1/2 w-full mt-11">
+                        <p class="text-[#01a6f1] text-2xl">ردیابی نمونه کارها</p>
+                        <p class="text-gray-400 text-base mt-12">
+                            موجودی پورتفولیوی شما داده های موجودی را از تمام صرافی ها و کیف پول های متصل جمع آوری می کند. ما همچنین از حساب‌های فرعی مانند: Margin، Lending، Swap و غیره پشتیبانی می‌کنیم. علاوه بر این، می‌توانید ورودی‌های موجودی دستی را برای نمایش کیف پول‌های آفلاین
+                            یا ذخیره‌سازی سرد اضافه و مدیریت کنید.
+                        </p>
+                    </div>
+                    <img src="img/feature07.png" alt="" class="mt-2 hidden xl:block -mr-56">
+                    <img src="img/feature06small.png" alt="" class="mt-6 mx-auto xl:-mt-7 block xl:hidden">
+                </div>
+            </div>
+            <div class="container border-t border-[#00e1f6] xl:border-0 mx-auto">
+                <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                    <img src="img/feature07-1.png" alt="" class="mx-auto lg:-mt-10 -ml-56 hidden xl:block">
+                    <div>
+                        <p class="text-[#01a6f1] text-2xl">معاملات چند بورسی</p>
+                        <p class="text-gray-400 text-base xl:w-1/2 w-full mt-7">
+                            در حین معامله در چندین صرافی از یک حساب امن واحد، داده های مبادلات و کیف پول خود را همگام سازی کنید. تاریخچه معاملات و موجودی پرتفولیو به طور خودکار وارد و به روز می شوند و به شما امکان می دهد معاملات قبلی را بررسی کرده و موجودی را در تمام صرافی های متصل
+                            دنبال کنید.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/feature07_noline.png" alt="" class="mt-4 xl:ml-[-240px] mx-auto xl:-mt-7  block xl:hidden">
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="preview" class="preview bg-[#2a2b3d] py-12 px-4">
+        <h1 class="text-white text-center text-4xl font-bold">پیش نمایش</h1>
+        <p class="text-center text-[#00e1f6] text-lg font-bold my-2">رابط کاملاً قابل تنظیم و پاسخگو</p>
+        <p class="text-center text-gray-500 md:w-1/3 w-full mx-auto">
+            یک پلتفرم معاملات ارزهای دیجیتال یکپارچه با توجه به عملکرد و جزئیات.
+        </p>
+        <div class="relative mt-8 px-8">
+            <div class="relative md:w-2/4 w-[499px] mx-auto">
+                <img src="img/computer-over.png" class="absolute inset-0 mx-auto z-10 lg:block hidden">
+                <div class="swiper-button-prev hidden lg:block"></div>
+                <div class="swiper-button-next hidden lg:block"></div>
+            </div>
+
+            <div class="swiper mySwiper h-96">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/screen-balance.png" class="mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/screen-stats.png" class="mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/screen-trading.png" class="mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/screen-balance.png" class="mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/screen-stats.png" class="mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/screen-trading.png" class="mx-auto" />
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- <div id="screen">
+            <div class="mockups">
+                <div class="css-mb-with-glate">
+                    <div class="mb-display-position">
+                        <div class="mb-display">
+                            <div class="mb-screen-position">
+                                <div class="mb-screen">
+                                    <div id="mockup-slider" class="laptop-slider owl-carousel">
+                                        <img src="img/screen-balance.png">
+                                        <img src="img/screen-balance.png">
+                                        <img src="img/screen-balance.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-body"></div>
+                    <div class="mb-bottom-cover"></div>
+                </div>
+            </div>
+        </div> -->
+
+    </section>
+
+
+    <section id="programs" class="programs bg-no-repeat bg-cover bg-center py-24">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 justify-center">
+                <div class="bg-no-repeat bg-cover py-12 w-[409px] h-[505px] pt-24 mx-auto">
+                    <p class="text-center text-white font-bold text-4xl">
+                        وابسته<br> برنامه
+                    </p>
+                    <img src="img/affiliate-gfx.png" alt="" class="block mx-auto mt-2">
+                    <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-60 py-2 text-sm inset-x-0 mx-auto relative mt-5 after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+                        بیشتر بخوانید
+                    </a>
+                </div>
+                <div class="bg-no-repeat bg-cover py-12 w-[409px] h-[505px] pt-24 mx-auto">
+                    <p class="text-center text-white font-bold text-4xl">
+                        معرف<br> برنامه
+                    </p>
+                    <img src="img/referral-gfx.png" alt="" class="block mx-auto mt-2">
+                    <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-60 py-2 text-sm inset-x-0 mx-auto relative mt-5 after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+                        بیشتر بخوانید
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team bg-[#2a2b3d] py-32 px-4 bg-contain bg-bottom">
+        <div class="container mx-auto">
+            <h1 class="text-white text-center text-4xl font-bold">تیم ما</h1>
+            <p class="text-center text-[#00e1f6] text-lg font-bold my-2">با ما آشنا بشو!</p>
+            <p class="text-center text-gray-500 md:w-2/3 w-full mx-auto text-lg">
+                ما تیمی متشکل از افراد خلاق با سابقه تجارت، تجارت و مهندسی نرم افزار هستیم که با هدف ایجاد محیطی بهتر برای معامله گران ارزهای دیجیتال چند صرافی به هم پیوسته ایم. از طریق خدمات خود، مایلیم در پذیرش گسترده رمزنگاری و به طور کلی به جامعه کمک کنیم.
+            </p>
+            <div class="grid lg:grid-cols-6 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-7 mt-16">
+                <div>
+                    <img src="img/7.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        آنگل ولادو
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:right-0 before:bg-[#00e1f6]">
+                        متخصص ui
+                    </p>
+                </div>
+                <div>
+                    <img src="img/8.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        دنیس سوارز
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:right-0 before:bg-[#00e1f6]">
+                        مدیر پروژه
+                    </p>
+                </div>
+                <div>
+                    <img src="img/9.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        دیمیتار رونی
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:right-0 before:bg-[#00e1f6]">
+                        طراح وب
+                    </p>
+                </div>
+                <div>
+                    <img src="img/10.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        نیکولا زولا
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:right-0 before:bg-[#00e1f6]">
+                        طراح وب
+                    </p>
+                </div>
+                <div>
+                    <img src="img/11.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        مایک هانری
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:right-0 before:bg-[#00e1f6]">
+                        مهندس نرم افزار
+                    </p>
+                </div>
+                <div>
+                    <img src="img/12.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        ایلیا سندی
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:right-0 before:bg-[#00e1f6]">
+                        حقوقی
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="px-4 bg-[#2a2b3d] py-32 blog bg-no-repeat bg-cover bg-center">
+        <div class="container mx-auto">
+            <h1 class="text-white text-center text-4xl font-bold">بلاگ</h1>
+            <p class="text-center text-[#00e1f6] text-lg font-bold my-2">CryptoView | مدیر سبد ارزهای دیجیتال و پلتفرم چند معامله</p>
+            <p class="text-center text-gray-500 md:w-2/3 w-full mx-auto text-lg">
+                اطلاعیه ها، مطالب آموزشی و موارد دیگر...
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 mt-20">
+                <div>
+                    <div class="bg-white p-2">
+                        <img src="img/blog_featured_image.jpg" alt="" class="block w-full">
+                        <p class="text-[#01a6f1] p-3 text-2xl">
+                            صرافی Cryptocurrency Crypto.com در حال حاضر به طور کامل برای نمودار، تعادل نمونه کارها و معاملات نقطه ای یکپارچه شده است.
+                        </p>
+                        <p class="text-gray-500 p-3">
+                            ما هیجان زده هستیم که یکپارچه سازی Crypto.com را برای ترسیم نمودار، ردیابی تعادل و معاملات نقطه ای اعلام کنیم. Crypto.com علاوه بر صرافی ارزهای دیجیتال، انواع خدمات مرتبط با کریپتو را نیز ارائه می دهد.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white px-2 pb-10">
+                        <img src="img/crypto_exchanges_trading.jpg" alt="" class="block w-full">
+                        <p class="text-[#01a6f1] p-3 text-2xl">
+                            صرافی های ارزهای دیجیتال Okex، Cex، HitBTC و Bittrex اکنون برای معاملات نقطه ای در CryptoView در دسترس هستند!
+                        </p>
+                        <p class="text-gray-500 p-3">
+                            ما هیجان زده هستیم که ادغام Okex، Cex، HitBTC و Bittrex را برای معاملات نقطه ای اعلام کنیم. در میان سایر ویژگی‌ها و بهبودها، تیم out نیز بر روی یکپارچه‌سازی کامل Crypto.com کار می‌کند
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-2">
+                        <img src="img/kucoin_blog_featured.jpg" alt="" class="block w-full">
+                        <p class="text-[#01a6f1] p-3 text-2xl">
+                            KuCoin کلید API را به V2.0 ارتقا داد. کاربران CryptoView باید به V2.0 به‌روزرسانی شوند زیرا API V1 دیگر پشتیبانی نمی‌شود.
+                        </p>
+                        <p class="text-gray-500 p-3">
+                            صرافی ارزهای دیجیتال KuCoin کلید API را به نسخه 2.0 ارتقا داد. کلید V1 API تا 1 می 2021 (UTC+8) معتبر خواهد ماند و پس از آن KuCoin دیگر از آن پشتیبانی نخواهد کرد. کاربران CryptoView باید کلید API خود را به V2 ارتقا دهند ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-60 py-2 text-sm inset-x-0 mx-auto relative mt-8 after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+                مشاهده تمام پست های بلاگ
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-[#2a2b3d] text-sm">
+        <div class="container mx-auto bg-center bg-cover py-9 px-4">
+            <div class="grid grid-cols-12 gap-9 lg:gap-1">
+                <div class="lg:col-span-3 col-span-12">
+                    <img src="img/logo-top.png" alt="">
+                    <p class="text-gray-300 p-4 lg:pl-20">
+                        <span class="font-bold text-right">CryptoView</span> یک پلتفرم معاملاتی و مدیریت سبد ارزهای دیجیتال یکپارچه است.
+                    </p>
+                    <div class="flex items-center">
+                        <a class="cursor-pointer hover:opacity-80">
+                            <img src="img/button-blue02.png" alt="">
+                        </a>
+                        <a class="cursor-pointer hover:opacity-80">
+                            <img src="img/button-signup02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mt-5">
+                        <p class="text-gray-600 text-xs">به زودی:</p>
+                        <img src="img/stores.png" alt="" class="mt-2">
+                    </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-6 lg:gap-1">
+                        <div>
+                            <h2 class="text-[#01a6f1]">ناوبری سریع</h2>
+                            <img src="img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            خانه
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            ویژگی ها
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            اسکرین شات ها
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            وابسته و ارجاع
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            تیم
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            بلاگ
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <img src="img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            مبادلات پشتیبانی شده
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            کیف پول های پشتیبانی شده
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            امنیت
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            رابط
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            مرکز پشتیبانی
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            ارتباط با ما
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-[#01a6f1]">اسناد حقوقی</h2>
+                            <img src="img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            تیم خدمات
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            سیاست حفظ حریم خصوصی
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            خط مشی امنیتی
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            شرایط ارجاع
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            شرایط وابسته
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            سیاست کوکی ها
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h2 class="text-[#01a6f1] mt-5">برنامه های CryptoView</h2>
+                            <img src="img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            وابسته
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="ml-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            معرف
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3 col-span-12">
+                    <div class="bg-[#191c23] py-3 lg:w-[279px] w-full mx-auto">
+                        <div class="mx-auto w-3/4">
+                            <h2 class="text-gray-500">اسناد حقوقی</h2>
+                            <img src="img/line.png" alt="" class="my-4">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <img src="img/ico-question.png" alt="" class="ml-2">
+                                        <p>
+                                            کریپتوکارنسی چیست؟
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <img src="img/ico-question.png" alt="" class="ml-2">
+                                        <p>
+                                            بیت کوین / آلت کوین چیست؟
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <img src="img/ico-question.png" alt="" class="ml-2">
+                                        <p>
+                                            نکات ایمنی و ایمنی
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="mx-auto block my-9">
+                        <img src="img/button-marketing.png" alt="" class="mx-auto cursor-pointer border border-transparent hover:border-[#00e1f6]">
+                    </a>
+                    <div class="flex items-center justify-center gap-3">
+                        <a>
+                            <img src="img/ico-fb.svg" alt="" class="w-10 hover:opacity-80">
+                        </a>
+                        <a>
+                            <img src="img/ico-tw.svg" alt="" class="w-10 hover:opacity-80">
+                        </a>
+                        <a>
+                            <img src="img/ico-yt.svg" alt="" class="w-10 hover:opacity-80">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black py-7">
+            <div class="mx-auto container">
+                <p class="text-gray-500 text-sm text-center">
+                    حق چاپ © 2022 CryptoView.com. تمامی حقوق محفوظ است
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="#header" class="fixed bottom-9 cursor-pointer font-bold right-12 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-chevron-up text-[#01a6f1]" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+<link href="../tailwind.css">
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i tailwind.css -o ./layouts/css/styles.css --watch -->

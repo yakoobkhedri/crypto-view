@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: IRANSansX-Regular;
+    src: url(layouts/fonts/woff/IRANSansX-Regular.woff) format("woff");
+}
+
+body {
+    font-family: IRANSansX-Regular;
+}
+
+.loginBg {
+    background-image: url('../img/bgr01.jpg');
+}
+
+.signUpBg {
+    background-image: url('../img/button-signup-free.png');
+}
+
+#mobileMenu {
+    right: -444px;
+}
+
+#mobileMenu.active {
+    right: 0;
+}
+
+.section1 {
+    background-image: url('../img/bgr01.jpg');
+}
+
+.section2>div {
+    background-image: url('../img/logo-bottom.png');
+}
+
+.features {
+    background-image: url('../img/bgr-gfx3-2.png');
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 190px!important;
+    background: black!important;
+    border-radius: 98px!important;
+    width: 42px!important;
+    height: 42px!important;
+    color: white!important;
+    z-index: 111!important;
+    font-size: 9px;
+}
+
+.swiper-button-prev {
+    left: -2px!important;
+    z-index: 190px!important;
+}
+
+.swiper-button-next {
+    right: -2px!important;
+    z-index: 190px!important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: #00e1f6!important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 14px!important;
+}
+
+.programs,
+.blog {
+    background-image: url('../img/bgr02.jpg');
+}
+
+.programs .grid>div {
+    background-image: url('../img/bgr-hexagon.png');
+}
+
+.team {
+    background-image: url('../img/bgr-affiliate.png');
+}
+
+footer>div {
+    background-image: url('../img/bgr-footer.png');
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+    background-color: #00e1f6!important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none!important;
+    }
+}
